@@ -20,14 +20,14 @@ df = pd.DataFrame(grafico)
 df.plot.pie(y='values', labels=df['labels'], autopct='%1.1f%%', title="Faturamento")
 ```
 
-<img src="./Conteudos/AnalisandoCSV.png">
+<img src="./Conteudos/Grafico_pizza_Fat.png">
 
 #### Gráfico de Barras
 ```python
 df.plot.bar(x='labels', y='values', color=["blue", "red", "orange", "purple"])
 ```
 
-<img src="./Conteudos/AnalisandoCSV.png">
+<img src="./Conteudos/Grafico_Barras_Fat.png">
 
 </br>
 
@@ -50,7 +50,7 @@ df_categorias.columns = ['Loja 1', 'Loja 2', 'Loja 3', 'Loja 4']
 df_categorias.plot(kind='bar', figsize=(12, 6), title='Categorias por Loja')
 ```
 
-<img src="./Conteudos/AnalisandoCSV.png">
+<img src="./Conteudos/Grafico_Barras_Cat.png">
 
 </br>
 
@@ -73,7 +73,7 @@ df = pd.DataFrame(grafico_media)
 df.plot.barh(x='labels', y='values')
 ```
 
-<img src="./Conteudos/AnalisandoCSV.png">
+<img src="./Conteudos/Grafico_BarrasH_Ava.png">
 
 </br>
 
@@ -105,7 +105,7 @@ grafico_prod = {
 df_produtos.plot.bar(figsize=(12, 6), title='Produtos por Loja')
 ```
 
-<img src="./Conteudos/AnalisandoCSV.png">
+<img src="./Conteudos/Grafico_Barras_Prod.png">
 
 </br>
 
@@ -129,4 +129,4 @@ df = pd.DataFrame(grafico_frete)
 df.plot(kind='bar', x='labels', y='values', title='Frete Médio por Loja')
 ```
 
-<img src="./Conteudos/AnalisandoCSV.png">
+<img src="./Conteudos/Grafico_Barras_Frete.png">
